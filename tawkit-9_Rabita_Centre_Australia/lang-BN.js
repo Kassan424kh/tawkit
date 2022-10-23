@@ -1,7 +1,7 @@
 JS_eLang = 
 {
 	
-	HereMosqueName		: "মসজিদের নাম",
+	HereMosqueName		: "Rabita Centre - رباط سنتر",
 	HereMosqueMessage	: "ঘোষণা",
 	
 	MinutesToIqama		: "---",
