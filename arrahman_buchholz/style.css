@@ -146,7 +146,7 @@ background-color: #151515;
 .cssBtmLOCATION {position:absolute; right:1%; bottom:1.3%; width:30%; line-height:1em; font-size:2.3vw; color:var(--Color_LOWFOCUS); }
 .cssBtmVERSION  {position:absolute;  left:1%; bottom:1.3%; width:30%; line-height:1em; font-size:1.2vw; color:var(--Color_LOWFOCUS); }
 
-.HRimgLOGO_ALONGO {position:absolute; left:9.5%; top:-8%; width:10%; height:46%; opacity:0.5;}
+.HRimgLOGO_ALONGO {position:absolute; left:9.5%; top:-40%; width:13%; height:90%;}
 
 
 
