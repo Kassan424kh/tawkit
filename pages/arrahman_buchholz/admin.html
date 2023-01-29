@@ -14,7 +14,7 @@
 <meta http-equiv='content-type' content='text/html; charset=UTF-8' />
 <meta http-equiv='cache-control' content='public'>
 <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
-<link rel='icon' href='./../../favicon.ico'>
+<link rel='icon' href='./favicon.ico'>
 
 
 <script type='text/javascript' src='./../../PrayTimes.js'></script>
@@ -31,9 +31,8 @@ var JS_INI_CITIES = "./../../cities.js?e=" + JS_VERSIO;
 var JS_AudioCOMMANDS = "./../../audioCTRL/commands.js?e=" + JS_VERSIO; 
 	
 	document.write("<script src='"+JS_INI_CITIES+"'><\/script>");
-	document.write("<link rel='stylesheet' href='./../../style.css?s="+JS_VERSIO+"'>");
+	document.write("<link rel='stylesheet' href='./style.css?s="+JS_VERSIO+"'>");
 	document.write("<script src='"+JS_AudioCOMMANDS+"'><\/script>");
-	
 	
 var JS_LANG_NOW = "EN";
 var eetempo = localStorage.getItem('STORAGE_LANG_NOW');
@@ -152,7 +151,7 @@ var JS_PRAY_DURATION_OF_SHOROQ		=  5; // no need adjustement, fixed 2-rakats(5mi
 var JS_PRAY_DURATION_OF_DOHR		= 10;
 var JS_PRAY_DURATION_OF_ASR			= 10;
 var JS_PRAY_DURATION_OF_MAGHRIB		= 5 ;
-var JS_PRAY_DURATION_OF_ISHA		= 10;
+var JS_PRAY_DURATION_OF_ISHA		= 10 ;
 
 
 
@@ -309,7 +308,7 @@ var JS_IQAMA_TIME_OF_SHOROQ		=  5;
 var JS_IQAMA_TIME_OF_DOHR		= 10;
 var JS_IQAMA_TIME_OF_ASR		= 10;
 var JS_IQAMA_TIME_OF_MAGHRIB	= 5 ;
-var JS_IQAMA_TIME_OF_ISHA		= 10;
+var JS_IQAMA_TIME_OF_ISHA		= 10 ;
 
 tempo = localStorage.getItem('STORAGE_IQAMA_FAJR');		if(tempo) {JS_IQAMA_TIME_OF_FAJR 		= parseInt(tempo);}
 tempo = localStorage.getItem('STORAGE_IQAMA_SHOROQ');	if(tempo) {JS_IQAMA_TIME_OF_SHOROQ 		= parseInt(tempo);}
@@ -961,21 +960,21 @@ var STRtempo = localStorage.getItem('STORAGE_GPS_CUSTOMS_DATA'); 	if(STRtempo)
 						</div>
 				
 				<div class='cssMenuBTN' id='AAA_FullSCREEN'		onclick="CloseHELP(); goFullSCREEN();"				>-</div>
-				<div class='cssMenuBTN' style="display: none" id='AAA_MosqueNAME'		onclick="CloseHELP(); editMOSQUENAME();"			>-</div>
-				<div class='cssMenuBTN' style="display: none" id='AAA_OwnMessage' 	onclick="CloseHELP(); OwnMessageEditor();"			>-</div>
-				<div class='cssMenuBTN' style="display: none" id='AAA_LOCALISATION' 	onclick="CloseHELP(); ShowZunder('e_LOCALISATION'); autoHideCustoms();">-</div>
+				<div class='cssMenuBTN' id='AAA_MosqueNAME'		onclick="CloseHELP(); editMOSQUENAME();"			>-</div>
+				<div class='cssMenuBTN' id='AAA_OwnMessage' 	onclick="CloseHELP(); OwnMessageEditor();"			>-</div>
+				<div class='cssMenuBTN' id='AAA_LOCALISATION' 	onclick="CloseHELP(); ShowZunder('e_LOCALISATION'); autoHideCustoms();">-</div>
 				<div class='cssMenuBTN' id='AAA_HijriClick' 	onclick="CloseHELP(); HijriHELP();"					>-</div>
-				<div class='cssMenuBTN' style="display: none" id='AAA_set_THEMES' 	onclick="CloseHELP(); ShowZunder('e_THEMES');"		>-</div>
+				<div class='cssMenuBTN' id='AAA_set_THEMES' 	onclick="CloseHELP(); ShowZunder('e_THEMES');"		>-</div>
 				<div class='cssMenuBTN' id='AAA_e_OPTIONS' 		onclick="CloseHELP(); ShowZunder('e_OPTIONS');"		>-</div>
-				<div class='cssMenuBTN' style="display: none" id='AAA_ADJUSTMENTS' 	onclick="CloseHELP(); ShowZunder('e_ADJUSTMENTS');"	>-</div>
-				<div class='cssMenuBTN' style="display: none" id='AAA_JOMOATIME' 		onclick="CloseHELP(); SetJomoaTIME();"				>-</div>
-				<div class='cssMenuBTN' style="display: none" id='AAA_AZKAR'  		onclick="CloseHELP(); ShowZunder('e_AZKAR');"		>-</div>
-				<div class='cssMenuBTN' style="display: none" id='AAA_SLIDERS'  		onclick="CloseHELP(); ShowZunder('e_SLIDERS');"		>-</div>
+				<div class='cssMenuBTN' id='AAA_ADJUSTMENTS' 	onclick="CloseHELP(); ShowZunder('e_ADJUSTMENTS');"	>-</div>
+				<div class='cssMenuBTN' id='AAA_JOMOATIME' 		onclick="CloseHELP(); SetJomoaTIME();"				>-</div>
+				<div class='cssMenuBTN' id='AAA_AZKAR'  		onclick="CloseHELP(); ShowZunder('e_AZKAR');"		>-</div>
+				<div class='cssMenuBTN' id='AAA_SLIDERS'  		onclick="CloseHELP(); ShowZunder('e_SLIDERS');"		>-</div>
 				<div class='cssMenuBTN' id='AAA_BLACKSCREEN' 	onclick="CloseHELP(); ShowZunder('e_BLACKSCREEN');"	>-</div>
-				<div class='cssMenuBTN' style="display: none" id='AAA_DimmerDIRECT' 	onclick="CloseHELP(); ForceScreenSaverNOW();"		>-</div>
-				<div class='cssMenuBTN' style="display: none" id='AAA_MOSQUELOGO' 	onclick="CloseHELP(); LogoOfYourMosque();"			>-</div>
+				<div class='cssMenuBTN' id='AAA_DimmerDIRECT' 	onclick="CloseHELP(); ForceScreenSaverNOW();"		>-</div>
+				<div class='cssMenuBTN' id='AAA_MOSQUELOGO' 	onclick="CloseHELP(); LogoOfYourMosque();"			>-</div>
 				<div class='cssMenuBTN' id='AAA_APPreload' 		onclick="CloseHELP(); location.reload();"			>-</div>
-				<div class='cssMenuBTN' style="display: none" id='AAA_MOBILE' 		onclick="CloseHELP(); ShowZunder('e_MOBILE');"		>-</div>
+				<div class='cssMenuBTN' id='AAA_MOBILE' 		onclick="CloseHELP(); ShowZunder('e_MOBILE');"		>-</div>
 				<div class='cssMenuBTN' id='AAA_AboutTAWKIT' 	onclick="CloseHELP(); ShowZunder('e_ABOUT');"		>-</div>
 				<div class='cssMenuBTN' dir='ltr' style='text-align:left;'><span title='ENGLISH' class='CSS_EN33'  onclick='ClearSETTINGS();'>RESET</span></div>
 				<div style='height:10%;' ></div>

@@ -17,27 +17,28 @@
 <link rel='icon' href='./favicon.ico'>
 
 
-<script type='text/javascript' src='./PrayTimes.js'></script>
+<script type='text/javascript' src='./../../PrayTimes.js'></script>
 
 
-<script type='text/javascript' src='./ayats.js?c=111'></script>
+<script type='text/javascript' src='./../../ayats.js?c=111'></script>
 
-<script type='text/javascript' src='./countries.js'></script>
+<script type='text/javascript' src='./../../countries.js'></script>
 
 
 <script type="text/javascript" language="javascript">  
 var JS_VERSIO = (new Date()).getTime(); 
-var JS_INI_CITIES = "./cities.js?e=" + JS_VERSIO;  
-var JS_AudioCOMMANDS = "./audioCTRL/commands.js?e=" + JS_VERSIO; 
+var JS_INI_CITIES = "./../../cities.js?e=" + JS_VERSIO;  
+var JS_AudioCOMMANDS = "./../../audioCTRL/commands.js?e=" + JS_VERSIO; 
 	
 	document.write("<script src='"+JS_INI_CITIES+"'><\/script>");
 	document.write("<link rel='stylesheet' href='./style.css?s="+JS_VERSIO+"'>");
 	document.write("<script src='"+JS_AudioCOMMANDS+"'><\/script>");
 	
+	
 var JS_LANG_NOW = "EN";
 var eetempo = localStorage.getItem('STORAGE_LANG_NOW');
 if(eetempo) JS_LANG_NOW = eetempo;
-document.write("<script src='./lang-"+JS_LANG_NOW+".js'><\/script>");
+document.write("<script src='./../../lang-"+JS_LANG_NOW+".js'><\/script>");
 
 </script>
 
@@ -151,7 +152,7 @@ var JS_PRAY_DURATION_OF_SHOROQ		=  5; // no need adjustement, fixed 2-rakats(5mi
 var JS_PRAY_DURATION_OF_DOHR		= 10;
 var JS_PRAY_DURATION_OF_ASR			= 10;
 var JS_PRAY_DURATION_OF_MAGHRIB		= 5 ;
-var JS_PRAY_DURATION_OF_ISHA		= 10 ;
+var JS_PRAY_DURATION_OF_ISHA		= 10;
 
 
 
@@ -308,7 +309,7 @@ var JS_IQAMA_TIME_OF_SHOROQ		=  5;
 var JS_IQAMA_TIME_OF_DOHR		= 10;
 var JS_IQAMA_TIME_OF_ASR		= 10;
 var JS_IQAMA_TIME_OF_MAGHRIB	= 5 ;
-var JS_IQAMA_TIME_OF_ISHA		= 10 ;
+var JS_IQAMA_TIME_OF_ISHA		= 10;
 
 tempo = localStorage.getItem('STORAGE_IQAMA_FAJR');		if(tempo) {JS_IQAMA_TIME_OF_FAJR 		= parseInt(tempo);}
 tempo = localStorage.getItem('STORAGE_IQAMA_SHOROQ');	if(tempo) {JS_IQAMA_TIME_OF_SHOROQ 		= parseInt(tempo);}
@@ -354,7 +355,7 @@ if(eetempo == '1') JS_WCSV_ACTIVE = true;
 /*   */
 if(JS_WCSV_ACTIVE)
 {
-var JS_wcsvFile	= './wcsv.js?e='+ JS_VERSIO;
+var JS_wcsvFile	= './../../wcsv.js?e='+ JS_VERSIO;
 document.write("<script src='"+JS_wcsvFile+"'><\/script>");
 JS_IQAMA_FULL_TIMES	= true; // FORCE SHOW FULL IQAMA TIMES
 }
@@ -420,12 +421,12 @@ var STRtempo = localStorage.getItem('STORAGE_GPS_CUSTOMS_DATA'); 	if(STRtempo)
 
 
 			<div style='position:absolute;  left:33%; top:2%; z-index:203;' >
-				<audio id='eBeeep' 			src='./audio/audio_beeep.wav'></audio>
-				<audio id='eTit' 			src='./audio/audio_tit.wav'></audio>
-				<audio id='eVoiceAzan' 		src='./audio/audio_azan.mp3'></audio>
-				<audio id='eVoiceIqama' 	src='./audio/audio_iqama.mp3'></audio>
+				<audio id='eBeeep' 			src='./../../audio/audio_beeep.wav'></audio>
+				<audio id='eTit' 			src='./../../audio/audio_tit.wav'></audio>
+				<audio id='eVoiceAzan' 		src='./../../audio/audio_azan.mp3'></audio>
+				<audio id='eVoiceIqama' 	src='./../../audio/audio_iqama.mp3'></audio>
 
-				<audio id='dynMP3' 	src='./audioCTRL/MosqueOn.mp3'></audio>
+				<audio id='dynMP3' 	src='./../../audioCTRL/MosqueOn.mp3'></audio>
 			</div>
 
 <!--  =======eMainVERTICAL====================================  -->
@@ -645,7 +646,7 @@ var STRtempo = localStorage.getItem('STORAGE_GPS_CUSTOMS_DATA'); 	if(STRtempo)
 
 <!-- DIM SCREEN -->
 <div id='eRIDO' class='CSS_BlackSCREEN' onclick='ForceRemoveBlackSCREEN();'>
-<img id='eMobile' border='0' class='cssNoMOBILE' src='./images/no-mobile.png' />
+<img id='eMobile' border='0' class='cssNoMOBILE' src='./../../images/no-mobile.png' />
 </div>
 
 
@@ -913,7 +914,7 @@ var STRtempo = localStorage.getItem('STORAGE_GPS_CUSTOMS_DATA'); 	if(STRtempo)
 
 <!-- HReRIDO-->
 <div id='HReRIDO' class='CSS_BlackSCREEN' onclick='ForceRemoveBlackSCREEN();'>
-<img id='HReMobile' border='0' class='cssNoMOBILE' src='./images/no-mobile.png' />
+<img id='HReMobile' border='0' class='cssNoMOBILE' src='./../../images/no-mobile.png' />
 </div>
 
 
@@ -960,21 +961,21 @@ var STRtempo = localStorage.getItem('STORAGE_GPS_CUSTOMS_DATA'); 	if(STRtempo)
 						</div>
 				
 				<div class='cssMenuBTN' id='AAA_FullSCREEN'		onclick="CloseHELP(); goFullSCREEN();"				>-</div>
-				<div class='cssMenuBTN' id='AAA_MosqueNAME'		onclick="CloseHELP(); editMOSQUENAME();"			>-</div>
-				<div class='cssMenuBTN' id='AAA_OwnMessage' 	onclick="CloseHELP(); OwnMessageEditor();"			>-</div>
-				<div class='cssMenuBTN' id='AAA_LOCALISATION' 	onclick="CloseHELP(); ShowZunder('e_LOCALISATION'); autoHideCustoms();">-</div>
+				<div class='cssMenuBTN' style="display: none" id='AAA_MosqueNAME'		onclick="CloseHELP(); editMOSQUENAME();"			>-</div>
+				<div class='cssMenuBTN' style="display: none" id='AAA_OwnMessage' 	onclick="CloseHELP(); OwnMessageEditor();"			>-</div>
+				<div class='cssMenuBTN' style="display: none" id='AAA_LOCALISATION' 	onclick="CloseHELP(); ShowZunder('e_LOCALISATION'); autoHideCustoms();">-</div>
 				<div class='cssMenuBTN' id='AAA_HijriClick' 	onclick="CloseHELP(); HijriHELP();"					>-</div>
-				<div class='cssMenuBTN' id='AAA_set_THEMES' 	onclick="CloseHELP(); ShowZunder('e_THEMES');"		>-</div>
+				<div class='cssMenuBTN' style="display: none" id='AAA_set_THEMES' 	onclick="CloseHELP(); ShowZunder('e_THEMES');"		>-</div>
 				<div class='cssMenuBTN' id='AAA_e_OPTIONS' 		onclick="CloseHELP(); ShowZunder('e_OPTIONS');"		>-</div>
-				<div class='cssMenuBTN' id='AAA_ADJUSTMENTS' 	onclick="CloseHELP(); ShowZunder('e_ADJUSTMENTS');"	>-</div>
-				<div class='cssMenuBTN' id='AAA_JOMOATIME' 		onclick="CloseHELP(); SetJomoaTIME();"				>-</div>
-				<div class='cssMenuBTN' id='AAA_AZKAR'  		onclick="CloseHELP(); ShowZunder('e_AZKAR');"		>-</div>
-				<div class='cssMenuBTN' id='AAA_SLIDERS'  		onclick="CloseHELP(); ShowZunder('e_SLIDERS');"		>-</div>
+				<div class='cssMenuBTN' style="display: none" id='AAA_ADJUSTMENTS' 	onclick="CloseHELP(); ShowZunder('e_ADJUSTMENTS');"	>-</div>
+				<div class='cssMenuBTN' style="display: none" id='AAA_JOMOATIME' 		onclick="CloseHELP(); SetJomoaTIME();"				>-</div>
+				<div class='cssMenuBTN' style="display: none" id='AAA_AZKAR'  		onclick="CloseHELP(); ShowZunder('e_AZKAR');"		>-</div>
+				<div class='cssMenuBTN' style="display: none" id='AAA_SLIDERS'  		onclick="CloseHELP(); ShowZunder('e_SLIDERS');"		>-</div>
 				<div class='cssMenuBTN' id='AAA_BLACKSCREEN' 	onclick="CloseHELP(); ShowZunder('e_BLACKSCREEN');"	>-</div>
-				<div class='cssMenuBTN' id='AAA_DimmerDIRECT' 	onclick="CloseHELP(); ForceScreenSaverNOW();"		>-</div>
-				<div class='cssMenuBTN' id='AAA_MOSQUELOGO' 	onclick="CloseHELP(); LogoOfYourMosque();"			>-</div>
+				<div class='cssMenuBTN' style="display: none" id='AAA_DimmerDIRECT' 	onclick="CloseHELP(); ForceScreenSaverNOW();"		>-</div>
+				<div class='cssMenuBTN' style="display: none" id='AAA_MOSQUELOGO' 	onclick="CloseHELP(); LogoOfYourMosque();"			>-</div>
 				<div class='cssMenuBTN' id='AAA_APPreload' 		onclick="CloseHELP(); location.reload();"			>-</div>
-				<div class='cssMenuBTN' id='AAA_MOBILE' 		onclick="CloseHELP(); ShowZunder('e_MOBILE');"		>-</div>
+				<div class='cssMenuBTN' style="display: none" id='AAA_MOBILE' 		onclick="CloseHELP(); ShowZunder('e_MOBILE');"		>-</div>
 				<div class='cssMenuBTN' id='AAA_AboutTAWKIT' 	onclick="CloseHELP(); ShowZunder('e_ABOUT');"		>-</div>
 				<div class='cssMenuBTN' dir='ltr' style='text-align:left;'><span title='ENGLISH' class='CSS_EN33'  onclick='ClearSETTINGS();'>RESET</span></div>
 				<div style='height:10%;' ></div>
@@ -2321,7 +2322,7 @@ var eee_CODE = obj.options[obj.selectedIndex].value;
 		
 
 JS_GPS_CALCULATION_CITIES_NOW = [];
-var tempIniFile = "./geoDATA/" + eee_CODE + ".ini";
+var tempIniFile = "./../../geoDATA/" + eee_CODE + ".ini";
 log(tempIniFile);
 uLoadGpsCitiesAsJS(tempIniFile);
 }
@@ -2436,7 +2437,7 @@ JS_eLocationByGPS.innerHTML = JS_GPS_FULL_CODE;
 /*
 var eLTD = JS_GPS_FULL_CODE.split('|')[0];
 eLTD = eLTD.toLowerCase();
-var nowICO = 'url(./images/flags/'+eLTD+'.png)';
+var nowICO = 'url(./../../images/flags/'+eLTD+'.png)';
 JS_eLocationByGPS.style.backgroundImage = nowICO;
 */
 }
@@ -2697,10 +2698,10 @@ if(JS_AZKAR_REPEATING_KONTO < 1) return;
 JS_RANDOM_NUMBER++;
 if(JS_RANDOM_NUMBER > 7) JS_RANDOM_NUMBER = 0;
 
-JS_ePANEL3.style.backgroundImage = 'url(./demoVR/demo-'+JS_RANDOM_NUMBER+'.jpg)'; 
+JS_ePANEL3.style.backgroundImage = 'url(./../../demoVR/demo-'+JS_RANDOM_NUMBER+'.jpg)'; 
 JS_ePANEL3.style.backgroundSize  = '100% 100%';
 
-JS_HRePANEL3.style.backgroundImage = 'url(./demoHR/demo-'+JS_RANDOM_NUMBER+'.jpg)'; 
+JS_HRePANEL3.style.backgroundImage = 'url(./../../demoHR/demo-'+JS_RANDOM_NUMBER+'.jpg)'; 
 JS_HRePANEL3.style.backgroundSize  = '100% 100%';
 
 
@@ -2752,13 +2753,13 @@ setTimeout("ShowEXPOSIO()", JS_AZKAR_EXPO_SHOW_HIDE);
 function ShowOnePicFIXED5min()
 {
 
-JS_ePANEL3.style.backgroundImage = 'url(./demoVR/1-pic-5min.jpg)'; 
+JS_ePANEL3.style.backgroundImage = 'url(./../../demoVR/1-pic-5min.jpg)'; 
 JS_ePANEL3.style.backgroundSize  = '100% 100%';
 JS_ePANEL3.className 	= 'CSS_SLIDERS_BG CSS_PANO3_VISIBLE ';
 JS_ePANEL3.style.left 	= '0%';
 
 
-JS_HRePANEL3.style.backgroundImage = 'url(./demoHR/1-pic-5min.jpg)'; 
+JS_HRePANEL3.style.backgroundImage = 'url(./../../demoHR/1-pic-5min.jpg)'; 
 JS_HRePANEL3.style.backgroundSize  = '100% 100%';
 JS_HRePANEL3.className 	= 'CSS_SLIDERS_BG CSS_PANO3_VISIBLE ';
 JS_HRePANEL3.style.left = '0%';
@@ -2834,10 +2835,10 @@ if(JS_SLIDES_DURATION_COUNTER < 1) 	return;
 
 JS_RANDO_SLIDE = Math.floor(Math.random() * 7) + 1; 
 
-JS_ePANEL3.style.backgroundImage   = 'url(./Slides/slide-'+JS_RANDO_SLIDE+'.jpg)'; 
+JS_ePANEL3.style.backgroundImage   = 'url(./../../Slides/slide-'+JS_RANDO_SLIDE+'.jpg)'; 
 JS_ePANEL3.style.backgroundSize    = '100% 100%';
 
-JS_HRePANEL3.style.backgroundImage = 'url(./Slides/slide-'+JS_RANDO_SLIDE+'.jpg)'; 
+JS_HRePANEL3.style.backgroundImage = 'url(./../../Slides/slide-'+JS_RANDO_SLIDE+'.jpg)'; 
 JS_HRePANEL3.style.backgroundSize  = '100% 100%';
 
 
@@ -5692,7 +5693,7 @@ log(acto);
 
 var clnSTR = getTextBetween(acto,"(",")");
 
-JS_dynMP3.src = "./audioCTRL/"+clnSTR+".mp3";
+JS_dynMP3.src = "./../../audioCTRL/"+clnSTR+".mp3";
 log(JS_dynMP3.src);
 JS_dynMP3.volume = 1;
 JS_dynMP3.play();
