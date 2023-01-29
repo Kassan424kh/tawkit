@@ -1,4 +1,0 @@
-JS_GPS_CALCULATION_CITIES_NOW =
-[
-"CC|West Island|-12.15681|96.82251|6.5|6.5",
-];

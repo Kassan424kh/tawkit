@@ -1,4 +1,0 @@
-JS_GPS_CALCULATION_CITIES_NOW =
-[
-"CX|Flying Fish Cove|-10.42172|105.67912|7.0|7.0",
-];
