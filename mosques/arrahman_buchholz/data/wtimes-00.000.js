@@ -379,3 +379,37 @@ var JS_TIMES =
 "12-30~~~~~06:26|08:29|12:28|13:58|16:16|18:06",
 "12-31~~~~~06:26|08:29|12:28|13:59|16:17|18:07"
 ];
+
+
+/*
+
+        // convert https://www.igmg.org/gebetskalender?stadt=Harburg_(DE)&id=20254 month to js code like in the top
+
+        // Selecting all elements with class "zeiten" which contains the prayer time data###
+        var zeitenElements = document.querySelectorAll('.zeiten');
+
+        // Initialize an empty array to store the lines
+        var linesArray = [];
+
+        // Iterate over each "zeiten" element starting from index 1 (excluding the first line)
+        for (var i = 1; i < zeitenElements.length; i++) {
+            var element = zeitenElements[i];
+            
+            // Extracting the date from the first span element in each "zeiten" element
+            var date = element.querySelector('.tarih').textContent.trim();
+            // Extracting prayer times from the rest of the span elements in each "zeiten" element
+            var imsak = element.querySelector('.imsak_time').textContent.trim();
+            var gunes = element.querySelector('.gunes_time').textContent.trim();
+            var ogle = element.querySelector('.ogle_time').textContent.trim();
+            var ikindi = element.querySelector('.ikindi_time').textContent.trim();
+            var aksam = element.querySelector('.aksam_time').textContent.trim();
+            var yatsi = element.querySelector('.yatsi_time').textContent.trim();
+            
+            // Creating the line in the desired format and pushing it to the array
+            var line = date.replace(/\./g, '-') + '~~~~~' + imsak + '|' + gunes + '|' + ogle + '|' + ikindi + '|' + aksam + '|' + yatsi;
+            linesArray.push(line);
+        }
+
+        // Logging the array of lines to the console
+        console.log(linesArray);
+*/
